@@ -111,9 +111,12 @@ function checkWord() {
     if (arrayUser.join('') !== word) {
         if (intentos >= 5) {
             paintCirclePurple(intentos);
-            console.log("perdiste")
-            document.getElementById("container-main").style.display = "none";            
-            document.getElementById("msj-win-lose").style.display = "block";
+            document.getElementById("container-main").style.display = "none";
+            document.getElementById("msj-win-lose").style.display = "flex";
+            const winMessage = document.getElementById('win-lose')
+            const intentosElement = document.getElementById('intents');
+            winMessage.textContent = `PERDISTE`
+            intentosElement.textContent = `AGOTASTE TUS INTENTOS :(`;
         } else {
             // Pintamos el círculo para indicar que desperdiciamos un intento
             paintCirclePurple(intentos);
@@ -124,7 +127,9 @@ function checkWord() {
         won = true;
         document.getElementById("container-main").style.display = "none";
         document.getElementById("msj-win-lose").style.display = "flex";
+        const winMessage = document.getElementById('win-lose')
         const intentosElement = document.getElementById('intents');
+        winMessage.textContent = `GANASTE FELICIDADES`
         intentosElement.textContent = `En ${intentos} Intentos`;
     }
 }
