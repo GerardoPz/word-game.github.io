@@ -122,7 +122,7 @@ function checkWord() {
         }
     } else {
         document.getElementById("container-main").style.display = "none";
-        document.getElementById("msj-win").style.display = "flex";
+        document.getElementById("msj-win-lose").style.display = "flex";
         const intentosElement = document.getElementById('intents');
         intentosElement.textContent = `En ${intentos} Intentos`;
         won = true;

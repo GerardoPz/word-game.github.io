@@ -142,7 +142,7 @@ h1 {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.msj-win { 
+.msj-win-lose { 
     display: none;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
@@ -165,7 +165,6 @@ h1 {
 .center-content h2,
 .center-content p,
 .center-content button {
-    background-color: red;
     margin-bottom: 10px; /* Ajusta la distancia deseada entre los elementos */
 }
 
@@ -202,12 +201,13 @@ h1 {
         width: 100%; /* Botones ocupan todo el ancho en tablet */
     }
 
-    .msj-win { 
+    .msj-win-lose { 
         display: none;
         width: 90%;
-        height: 70%;
+        height: 20%;
+        border-radius: 5%;
         position: fixed;
-        background-color: #672171;
+        background-color: #020617;
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         z-index: 1001;
