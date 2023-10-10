@@ -176,6 +176,10 @@ h1 {
     cursor: pointer;
 }
 
+.circle-purple {
+    background-color: #672171 !important;
+  }
+
 .circle-gray {
     background-color: gray;
 }

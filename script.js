@@ -138,7 +138,7 @@ function checkWord() {
 function paintCirclePurple(attempts) {
     const circles = document.querySelectorAll(".circle");
     if (attempts <= maxTries) {
-        circles[attempts - 1].style.backgroundColor = "#672171";
+        circles[attempts - 1].classList.add("circle-purple");
     }
 }
 
@@ -159,6 +159,7 @@ document.addEventListener('input', (event) => {
     }
 });
 
+
 // Obtén una referencia al botón "Reset" por su ID
 const resetButton = document.getElementById("reset");
 
@@ -168,10 +169,16 @@ resetButton.addEventListener("click", () => {
   intentos = 0;
   updateTriesDisplay();
   createRowWord();
+  
   // Agrega la clase circle-gray a todos los círculos
   const circles = document.querySelectorAll(".circle");
   circles.forEach(circle => {
     circle.classList.add("circle-gray");
+  });
+  
+  // Quita la clase circle-purple de todos los círculos
+  circles.forEach(circle => {
+    circle.classList.remove("circle-purple");
   });
 });
 
