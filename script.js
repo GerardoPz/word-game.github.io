@@ -112,8 +112,8 @@ function checkWord() {
         if (intentos >= 5) {
             paintCirclePurple(intentos);
             console.log("perdiste")
-            document.getElementById("container-main").style.display = "none";
-            document.getElementById("msj-win").style.display = "block";
+            document.getElementById("container-main").style.display = "none";            
+            document.getElementById("msj-win-lose").style.display = "block";
         } else {
             // Pintamos el círculo para indicar que desperdiciamos un intento
             paintCirclePurple(intentos);
