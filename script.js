@@ -121,11 +121,11 @@ function checkWord() {
             createRowWord(); // Crea un nuevo row-word para continuar adivinando
         }
     } else {
+        won = true;
         document.getElementById("container-main").style.display = "none";
         document.getElementById("msj-win-lose").style.display = "flex";
         const intentosElement = document.getElementById('intents');
         intentosElement.textContent = `En ${intentos} Intentos`;
-        won = true;
     }
 }
 
