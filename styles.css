@@ -172,6 +172,15 @@ h1 {
         max-width: 600px; /* Ajusta el máximo para tablet */
     }
 
+    input {
+        transform: scale(1);
+        transition: transform 0.2s;
+    }
+
+    input:focus {
+        transform: scale(1);
+    }
+
     .square {
         width: 10%; /* Ajusta el tamaño de los cuadrados para tablet */
         max-width: 10%; /* Ajusta el máximo para tablet */
