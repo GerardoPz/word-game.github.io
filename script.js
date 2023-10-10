@@ -112,6 +112,7 @@ function checkWord() {
         if (intentos >= 5) {
             paintCirclePurple(intentos);
             console.log("perdiste")
+            document.getElementById("container-main").style.display = "none";
             document.getElementById("msj-win").style.display = "block";
         } else {
             // Pintamos el círculo para indicar que desperdiciamos un intento
@@ -120,7 +121,8 @@ function checkWord() {
             createRowWord(); // Crea un nuevo row-word para continuar adivinando
         }
     } else {
-        document.getElementById("msj-win").style.display = "block";
+        document.getElementById("container-main").style.display = "none";
+        document.getElementById("msj-win").style.display = "flex";
         won = true;
     }
 }

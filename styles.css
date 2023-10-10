@@ -144,17 +144,22 @@ h1 {
 
 .msj-win { 
     display: none;
-    width: 100%;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 50%;
     height: 70%;
     position: fixed;
     background-color: #672171;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 1001;
-    /* Centrado horizontal y vertical */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.center-content {
+    text-align: center; /* Alinea el contenido al centro horizontalmente */
 }
 
 .close {
@@ -188,5 +193,20 @@ h1 {
 
     .button-3d {
         width: 100%; /* Botones ocupan todo el ancho en tablet */
+    }
+
+    .msj-win { 
+        display: none;
+        width: 90%;
+        height: 70%;
+        position: fixed;
+        background-color: #672171;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 1001;
+        /* Centrado horizontal y vertical */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }

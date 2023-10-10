@@ -7,7 +7,7 @@
     <title>WORD GAME</title>
 </head>
 <body>
-    <div class="container-main">
+    <div class="container-main" id="container-main">
         <h1>Word</h1>
         <input type="text" class="word-ans" value="eotxt" readonly>
         <div class="container-tries">
@@ -28,8 +28,11 @@
     </div>
 
     <div class="msj-win" id="msj-win">
-        <h2>GANASTE</h2>
-        <button id="cerrarPopup">Cerrar</button>
+        <div class="center-content">
+            <h2>GANASTE</h2>
+            <p>En Intentos</p>
+            <button class="button-3d" id="cerrarPopup">Cerrar</button>
+        </div>
     </div>
     <script src="script.js"></script> <!-- Corregimos la etiqueta de script -->
 </body>
