@@ -151,8 +151,8 @@ h1 {
     }
 
     .square {
-        width: 20%; /* Ajusta el tamaño de los cuadrados para tablet */
-        max-width: 50px; /* Ajusta el máximo para tablet */
+        width: 5vh; /* Ajusta el tamaño de los cuadrados para tablet */
+        max-width: 5vh; /* Ajusta el máximo para tablet */
     }
 
     .button-3d {
