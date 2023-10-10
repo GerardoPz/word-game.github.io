@@ -114,8 +114,9 @@ function checkWord() {
             document.getElementById("container-main").style.display = "none";
             document.getElementById("msj-win-lose").style.display = "flex";
             const winMessage = document.getElementById('win-lose')
-            winMessage.textContent = `PERDISTE`
-            intentosElement.textContent = `AGOTASTE TUS INTENTOS :(`;
+            const intentosElement = document.getElementById('intents');
+            winMessage.textContent = `GANASTE FELICIDADES`
+            intentosElement.textContent = `En ${intentos} Intentos`;
         } else {
             // Pintamos el círculo para indicar que desperdiciamos un intento
             paintCirclePurple(intentos);
