@@ -73,7 +73,6 @@ h1 {
 }
 
 .row-word {
-    border: 1px solid red;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -151,9 +150,8 @@ h1 {
     }
 
     .square {
-        background-color: red;
-        width: 5vh; /* Ajusta el tamaño de los cuadrados para tablet */
-        max-width: 15vh; /* Ajusta el máximo para tablet */
+        width: 10%; /* Ajusta el tamaño de los cuadrados para tablet */
+        max-width: 10%; /* Ajusta el máximo para tablet */
     }
 
     .button-3d {
