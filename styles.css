@@ -176,6 +176,11 @@ h1 {
     cursor: pointer;
 }
 
+.circle-gray {
+    background-color: gray;
+}
+    
+
 @media (max-width: 768px) {
     /* Estilos específicos para pantallas más pequeñas (ejemplo: tablet) */
     .container-main {

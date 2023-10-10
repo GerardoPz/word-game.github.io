@@ -159,5 +159,21 @@ document.addEventListener('input', (event) => {
     }
 });
 
-// Iniciar el juego al cargar la página
+// Obtén una referencia al botón "Reset" por su ID
+const resetButton = document.getElementById("reset");
+
+// Agrega un evento clic al botón "Reset"
+resetButton.addEventListener("click", () => {
+  // Reinicia los intentos y el juego sin cambiar la palabra
+  intentos = 0;
+  updateTriesDisplay();
+  createRowWord();
+  // Agrega la clase circle-gray a todos los círculos
+  const circles = document.querySelectorAll(".circle");
+  circles.forEach(circle => {
+    circle.classList.add("circle-gray");
+  });
+});
+
+// Inicializa el juego cuando se carga la página
 startGame();
