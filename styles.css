@@ -162,6 +162,13 @@ h1 {
     text-align: center; /* Alinea el contenido al centro horizontalmente */
 }
 
+.center-content h2,
+.center-content p,
+.center-content button {
+    background-color: red;
+    margin-bottom: 10px; /* Ajusta la distancia deseada entre los elementos */
+}
+
 .close {
     position: absolute;
     top: 10px;
