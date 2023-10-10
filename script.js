@@ -114,7 +114,6 @@ function checkWord() {
             document.getElementById("container-main").style.display = "none";
             document.getElementById("msj-win-lose").style.display = "flex";
             const winMessage = document.getElementById('win-lose')
-            const intentosElement = document.getElementById('intents');
             winMessage.textContent = `PERDISTE`
             intentosElement.textContent = `AGOTASTE TUS INTENTOS :(`;
         } else {
