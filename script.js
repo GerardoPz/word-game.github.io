@@ -157,8 +157,16 @@ randomButton.addEventListener("click", () => {
   // Actualiza la palabra a adivinar
   word = palabra;
   wordArray = word.split('');
-
   // Reinicia el juego
+  intentos = 0
+  updateTriesDisplay()
+  const circles = document.querySelectorAll(".circle");
+    circles.forEach(circle => {
+      circle.classList.add("circle-gray");
+    });
+    circles.forEach(circle => {
+      circle.classList.remove("circle-purple");
+    });
   startGame();
 });
   
