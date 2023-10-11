@@ -170,7 +170,8 @@ randomButton.addEventListener("click", () => {
   startGame();
 });
   
-  // Obtén una referencia al botón "Reset" por su ID
+
+// Obtén una referencia al botón "Reset" por su ID
   const resetButton = document.getElementById("reset");
   
   // Agrega un evento clic al botón "Reset"
