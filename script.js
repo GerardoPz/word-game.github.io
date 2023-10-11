@@ -139,6 +139,28 @@ const palabras = [
       }
     }
   });
+
+// Obtén una referencia al botón "Random" por su ID
+const randomButton = document.getElementById("random");
+
+// Agrega un evento clic al botón "Random"
+randomButton.addEventListener("click", () => {
+  // Obtiene una nueva palabra aleatoria
+  palabra = obtenerPalabraAleatoria();
+
+  // Desordena la nueva palabra
+  palabraDesordenada = desordenarPalabra(palabra);
+
+  // Actualiza el valor del input de respuesta
+  wordAnsInput.setAttribute('value', palabraDesordenada);
+
+  // Actualiza la palabra a adivinar
+  word = palabra;
+  wordArray = word.split('');
+
+  // Reinicia el juego
+  startGame();
+});
   
   // Obtén una referencia al botón "Reset" por su ID
   const resetButton = document.getElementById("reset");
