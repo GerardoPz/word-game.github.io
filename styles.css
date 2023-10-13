@@ -1,227 +1,226 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Añadido para que el padding no aumente el tamaño total */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Añadido para que el padding no aumente el tamaño total */
 }
 
 body {
-    margin: 0 auto;
-    min-height: 100vh;
-    max-width: 1280px;
-    background: #020617;
-    color: #cbd5e1;
-    font-family: 'Sora', sans-serif;
-    line-height: 1.5;
-    background-image: linear-gradient(#7429C6, #C951E7);
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 1280px;
+  background: #020617;
+  color: #cbd5e1;
+  font-family: 'Sora', sans-serif;
+  line-height: 1.5;
+  background-image: linear-gradient(#7429c6, #c951e7);
 }
 
 .container-main {
-    background-color: #030616;
-    width: 80%; /* Cambiado a un porcentaje para mayor adaptabilidad */
-    max-width: 400px; /* Establece un máximo para evitar que sea demasiado ancho en pantallas grandes */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 5vh;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; /* Centra el texto horizontalmente */
+  background-color: #030616;
+  width: 80%; /* Cambiado a un porcentaje para mayor adaptabilidad */
+  max-width: 400px; /* Establece un máximo para evitar que sea demasiado ancho en pantallas grandes */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 5vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 1.25rem;
-    color: #672171;
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #672171;
 }
 
 .word-ans {
-    width: 75%;
-    height: 7vh;
-    margin-top: 4vh;
-    border: 1px solid #4A5567;
-    border-radius: 5px;
-    background-color: #4A5567;
-    text-align: center;
-    font-size: 1.3rem;
-    letter-spacing: 1rem;
-    outline: none;
-    font-weight: bold;
-    color: #97A3B6;
+  width: 75%;
+  height: 7vh;
+  margin-top: 4vh;
+  border: 1px solid #4a5567;
+  border-radius: 5px;
+  background-color: #4a5567;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 1rem;
+  outline: none;
+  font-weight: bold;
+  color: #97a3b6;
 }
 
 .container-tries {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5vh;
-    color: #4A5567;
-    font-weight: 500;
-    font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  color: #4a5567;
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 
 .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 3px;
-    background-color: gray;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: gray;
 }
 
 .row-word {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
-    gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea en pantallas pequeñas */
+  gap: 10px;
 }
 
 .square {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    width: 10%; /* Cambiado a porcentaje para mayor adaptabilidad */
-    max-width: 10%; /* Establece un máximo para evitar que sea demasiado ancho */
-    height: 5vh;
-    border: 1px solid #4A5567;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 15%;
-    outline: none;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: lowercase;
-    color: white;
-    text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 10%; /* Cambiado a porcentaje para mayor adaptabilidad */
+  max-width: 10%; /* Establece un máximo para evitar que sea demasiado ancho */
+  height: 5vh;
+  border: 1px solid #4a5567;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 15%;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: white;
+  text-align: center;
 }
 
 .container-buttons {
-    width: 70%; /* Cambiado a 100% para ocupar todo el ancho disponible */
-    display: flex;
-    flex-wrap: wrap; /* Permite que los botones se envuelvan a la siguiente línea en pantallas pequeñas */
-    justify-content: space-between;
+  width: 70%; /* Cambiado a 100% para ocupar todo el ancho disponible */
+  display: flex;
+  flex-wrap: wrap; /* Permite que los botones se envuelvan a la siguiente línea en pantallas pequeñas */
+  justify-content: space-between;
 }
 
 .button-3d {
-    background-color: #C951E7;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-bottom: 3px solid #672171;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.75rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 48%; /* Divide los botones en dos columnas en pantallas pequeñas */
-    margin-bottom: 10px; /* Agrega un espacio entre los botones */
+  background-color: #c951e7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 3px solid #672171;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 48%; /* Divide los botones en dos columnas en pantallas pequeñas */
+  margin-bottom: 10px; /* Agrega un espacio entre los botones */
 }
 
 .button-3d::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scale(1, 0.3);
-    opacity: 0.7;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(1, 0.3);
+  opacity: 0.7;
 }
 
 .button-3d:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button-3d:active {
-    transform: translateY(1px);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.msj-win-lose { 
-    display: none;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    width: 50%;
-    height: 70%;
-    position: fixed;
-    background-color: #672171;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1001;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.msj-win-lose {
+  display: none;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 20%;
+  height: 40%;
+  position: fixed;
+  background-color: #020617;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .center-content {
-    text-align: center; /* Alinea el contenido al centro horizontalmente */
+  text-align: center; /* Alinea el contenido al centro horizontalmente */
 }
 
 .center-content h2,
 .center-content p,
 .center-content button {
-    margin-bottom: 10px; /* Ajusta la distancia deseada entre los elementos */
+  margin-bottom: 10px; /* Ajusta la distancia deseada entre los elementos */
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .circle-purple {
-    background-color: #672171 !important;
-  }
+  background-color: #672171 !important;
+}
 
 .circle-gray {
-    background-color: gray;
+  background-color: gray;
 }
-    
 
 @media (max-width: 768px) {
-    /* Estilos específicos para pantallas más pequeñas (ejemplo: tablet) */
-    .container-main {
-        width: 90%; /* Ajusta el ancho del contenedor para tablet */
-        max-width: 600px; /* Ajusta el máximo para tablet */
-    }
+  /* Estilos específicos para pantallas más pequeñas (ejemplo: tablet) */
+  .container-main {
+    width: 90%; /* Ajusta el ancho del contenedor para tablet */
+    max-width: 600px; /* Ajusta el máximo para tablet */
+  }
 
-    input {
-        transform: scale(1);
-        transition: transform 0.2s;
-    }
+  input {
+    transform: scale(1);
+    transition: transform 0.2s;
+  }
 
-    input:focus {
-        transform: scale(1);
-    }
+  input:focus {
+    transform: scale(1);
+  }
 
-    .square {
-        width: 10%; /* Ajusta el tamaño de los cuadrados para tablet */
-        max-width: 10%; /* Ajusta el máximo para tablet */
-    }
+  .square {
+    width: 10%; /* Ajusta el tamaño de los cuadrados para tablet */
+    max-width: 10%; /* Ajusta el máximo para tablet */
+  }
 
-    .button-3d {
-        width: 100%; /* Botones ocupan todo el ancho en tablet */
-    }
+  .button-3d {
+    width: 100%; /* Botones ocupan todo el ancho en tablet */
+  }
 
-    .msj-win-lose { 
-        display: none;
-        width: 90%;
-        height: 20%;
-        border-radius: 5px;
-        position: fixed;
-        background-color: #020617;
-        padding: 10%;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        z-index: 1001;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .msj-win-lose {
+    display: none;
+    width: 90%;
+    height: 20%;
+    border-radius: 5px;
+    position: fixed;
+    background-color: #020617;
+    padding: 10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
