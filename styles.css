@@ -97,6 +97,10 @@ h1 {
   text-align: center;
 }
 
+.square:hover {
+  border: 1px solid purple;
+}
+
 .container-buttons {
   width: 70%; /* Cambiado a 100% para ocupar todo el ancho disponible */
   display: flex;
