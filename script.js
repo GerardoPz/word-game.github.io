@@ -203,8 +203,6 @@ function reiniciarJuego() {
     circle.classList.remove('circle-purple');
   });
 
-  console.log('REINICIASTE');
-
   // Inicializa el juego
   startGame();
 }
