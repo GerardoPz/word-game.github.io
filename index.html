@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WORD GAME</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-main" id="container-main">
-        <h1>Word</h1>
-        <input type="text" class="word-ans" value="eotxt" readonly>
-        <div class="container-tries">
-            <span>Intentos (0/5): </span>
-            <div class="circle" id="circle1"></div>
-            <div class="circle" id="circle1"></div>
-            <div class="circle" id="circle1"></div>
-            <div class="circle" id="circle1"></div>
-            <div class="circle" id="circle1"></div>
-        </div>
-        <div class="container-row-word" id="container-row-word">
-
-        </div>
-        <div class="container-buttons">
-            <button class="button-3d" id="random">Random</button>
-            <button class="button-3d" id="reset">Reset</button>
-        </div>
+      <h1>Word</h1>
+      <input type="text" class="word-ans" value="eotxt" readonly />
+      <div class="container-tries">
+        <span>Intentos (0/5): </span>
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+        <div class="circle" id="circle4"></div>
+        <div class="circle" id="circle5"></div>
+      </div>
+      <div class="container-row-word" id="container-row-word"></div>
+      <div class="container-buttons">
+        <button class="button-3d" id="random">Random</button>
+        <button class="button-3d" id="reset">Reset</button>
+      </div>
     </div>
 
     <div class="msj-win-lose" id="msj-win-lose">
-        <div class="center-content">
-            <h2 id="win-lose"></h2>
-            <p id="intents"></p>
-            <button class="button-3d" id="volver-jugar">VOLVER A JUGAR</button>
-        </div>
+      <div class="center-content">
+        <h2 id="win-lose"></h2>
+        <p id="intents"></p>
+        <button class="button-3d" id="reiniciar-juego">VOLVER A JUGAR</button>
+      </div>
     </div>
-    <script src="script.js"></script> <!-- Corregimos la etiqueta de script -->
-</body>
+    <script src="script.js"></script>
+    <!-- Corregimos la etiqueta de script -->
+  </body>
 </html>
